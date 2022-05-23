@@ -1,0 +1,48 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #F46665;
+  --ifm-color-primary-dark: #31445A;
+  --ifm-color-primary-darker: #182740;
+  --ifm-color-primary-darkest: #09122B;
+  --ifm-color-primary-light: #F7AB8D;
+  --ifm-color-primary-lighter: #FBB3A3;
+  --ifm-color-primary-lightest: #FEEBE0;
+  --ifm-code-font-size: 95%;
+}
+
+.redocusaurus .api-content h1 {
+  color: rgb(244, 102, 101) !important;
+}
+
+/* show the search results - which for some reason gets hidden */
+.redocusaurus .menu-content div:first-child,
+.redocusaurus-has-logo .menu-content div:first-child {
+  display: block !important;
+}
+
+/* rehide the logo above the search results */
+.menu-content a img {
+  display: none;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.redocusaurus .api-content h3 {
+  color: #ffffff;
+}
