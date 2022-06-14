@@ -7,7 +7,7 @@ module.exports = {
   tagline: 'Example Documentation...',
   url: 'https://docs.example.com',
   baseUrl: '/',
-  noIndex: process.env.ENV !== 'prod',
+  noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://www.example.com/favicon.ico',
@@ -54,8 +54,8 @@ module.exports = {
       'redocusaurus',
       {
         specs: [{
-          routePath: '/api/',
-          specUrl: 'https://example.net/api.json'
+          route: '/api/',
+          spec: 'https://redocly.github.io/redoc/openapi.yaml',
         }],
         theme: {
           primaryColor: '#F46665',
